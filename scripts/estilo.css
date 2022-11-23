@@ -1,0 +1,34 @@
+body {
+		color: #000;
+		font: 12px Verdana, sans-serif;
+		}
+
+#conteudo-left{
+  /*Novamente definimos a largura da div*/
+  width:200px;
+  /* altura da div */
+  height:500px;
+  /* O atributo Float é utilizado para fazermos o nosso bloco(div) literalmente flutue e se posicione onde queremos na página, quando escolhemos left, dizemos que esse bloco irá se posicionar na parte esquerda da página */
+  float:left;
+  /* Cor de fundo da div */
+  background-color:silver;
+  }
+button {
+    background-color: silver; /* Green */
+    border: none;
+    color: white;
+    padding: 4px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+}
+#conteudo-right{
+  /*Novamente definimos a largura da div*/
+  width:1000px;
+  /* altura da div */
+  height:500px;
+  /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo em cascata, nossa div conteúdo definimos a largura de 1000px e na conteudo-left 500px,
+automaticamente ao definirmos o conteudo-right com 500px e à esquerda também, ele ficou à direita do conteudo-left, pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+  float:left;
+  background-color:#D8D8D8;
+  }
